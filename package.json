@@ -5,8 +5,9 @@
   "type": "module",
   "scripts": {
     "build": "node server.js",
-    "server": "nodemon server.js",
-    "start": "nodemon server.js"
+    "server": "node server.js",
+    "start": "node server.js",
+    "production": "npm run build && cross-env BUILD_MODE= production node server.js"
   },
   "author": "",
   "license": "ISC",

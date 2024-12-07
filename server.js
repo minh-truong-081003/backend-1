@@ -50,10 +50,7 @@ app.get("/", (req, res) => {
   res.send("API Working");
 });
 
-// Upload route
-app.post('/upload', upload.single('file'), (req, res) => {
-  res.status(200).send(req.file);
-});
+
 
 // Error handling middleware
 app.use((err, req, res, next) => {
